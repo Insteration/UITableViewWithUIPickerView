@@ -12,12 +12,9 @@ class MainTableViewController: UITableViewController, UIPickerViewDelegate, UIPi
     
     let array = ["1", "2", "3", "4", "5"]
 
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
- 
     }
 
     // MARK: - Table view data source
@@ -30,7 +27,6 @@ class MainTableViewController: UITableViewController, UIPickerViewDelegate, UIPi
         return 1
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let picker = UIPickerView()
@@ -41,7 +37,6 @@ class MainTableViewController: UITableViewController, UIPickerViewDelegate, UIPi
 
         cell.frame = CGRect(x: 0, y: 0, width: 320, height: 180)
         cell.addSubview(picker)
-        print("Check")
         return cell
     }
  
