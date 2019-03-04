@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D9E3ED55222D61DA007003DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3ED54222D61DA007003DD /* AppDelegate.swift */; };
-		D9E3ED57222D61DA007003DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3ED56222D61DA007003DD /* ViewController.swift */; };
 		D9E3ED5A222D61DA007003DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E3ED58222D61DA007003DD /* Main.storyboard */; };
 		D9E3ED5C222D61DB007003DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9E3ED5B222D61DB007003DD /* Assets.xcassets */; };
 		D9E3ED5F222D61DB007003DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9E3ED5D222D61DB007003DD /* LaunchScreen.storyboard */; };
+		D9E3ED67222D6246007003DD /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E3ED66222D6246007003DD /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9E3ED51222D61DA007003DD /* UITableViewWithUIPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewWithUIPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9E3ED54222D61DA007003DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9E3ED56222D61DA007003DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9E3ED59222D61DA007003DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9E3ED5B222D61DB007003DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9E3ED5E222D61DB007003DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9E3ED60222D61DB007003DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E3ED66222D6246007003DD /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				D9E3ED54222D61DA007003DD /* AppDelegate.swift */,
-				D9E3ED56222D61DA007003DD /* ViewController.swift */,
+				D9E3ED66222D6246007003DD /* MainTableViewController.swift */,
 				D9E3ED58222D61DA007003DD /* Main.storyboard */,
 				D9E3ED5B222D61DB007003DD /* Assets.xcassets */,
 				D9E3ED5D222D61DB007003DD /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9E3ED57222D61DA007003DD /* ViewController.swift in Sources */,
+				D9E3ED67222D6246007003DD /* MainTableViewController.swift in Sources */,
 				D9E3ED55222D61DA007003DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4FXKBHXYA;
 				INFOPLIST_FILE = UITableViewWithUIPickerView/Info.plist;
@@ -291,6 +292,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = JG.UITableViewWithUIPickerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B4FXKBHXYA;
 				INFOPLIST_FILE = UITableViewWithUIPickerView/Info.plist;
@@ -309,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = JG.UITableViewWithUIPickerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
